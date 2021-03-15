@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.cyril.event.config.RedisMQAutoConfiguration,\
+  com.cyril.event.config.OnsMQAutoConfiguration,\
+  com.cyril.event.config.OnsBroadcastMQAutoConfiguration

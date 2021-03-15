@@ -1,0 +1,37 @@
+mq:
+  redis:
+    topic: testEventTopic
+    processing: testEventProcessing
+    enabled: true
+  ons:
+    enabled: true
+    consumer_enabled: true
+    onsAddr: http://onsaddr-internet.aliyun.com/rocketmq/nsaddr4client-internet
+    accessKey: ***
+    secretKey: ***
+    producer: PID_malltest
+    consumer: CID_malltest
+    topic: MallTest
+    broadcast:
+      enabled: true
+      consumer_enabled: true
+      onsAddr: http://onsaddr-internet.aliyun.com/rocketmq/nsaddr4client-internet
+      accessKey: ***
+      secretKey: ***
+      producer: ***
+      topic: ***
+      consumer: ***
+
+spring:
+  redis:
+    database: 0
+    host: ***
+    port: 63790
+    password: divhDih4GKIn
+    lettuce:
+      pool:
+        max-active: 30
+        max-wait: -1
+        max-idle: 50
+        min-idle: 5
+    timeout: 500
